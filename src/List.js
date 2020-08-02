@@ -32,7 +32,7 @@ function List(props) {
                         taskEdit.id === el.id
                             ? <>
                                 <input  type="text" value={taskEdit.title} onChange={onEditTaskChange} />
-                                <button className="btn btn-outline-secondary btn-sm ml-2"
+                                <button className="btn btn-outline-success btn-sm ml-2"
                                         type="button"
                                         onClick={taskSave}
 
