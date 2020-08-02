@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Todo-Bootstrap/static/css/main.5171e780.chunk.css",
+    "main.js": "/Todo-Bootstrap/static/js/main.f4bfcbf1.chunk.js",
+    "main.js.map": "/Todo-Bootstrap/static/js/main.f4bfcbf1.chunk.js.map",
+    "runtime-main.js": "/Todo-Bootstrap/static/js/runtime-main.53237ca2.js",
+    "runtime-main.js.map": "/Todo-Bootstrap/static/js/runtime-main.53237ca2.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/Todo-Bootstrap/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.5bacebe9.chunk.js": "/Todo-Bootstrap/static/js/2.5bacebe9.chunk.js",
+    "static/js/2.5bacebe9.chunk.js.map": "/Todo-Bootstrap/static/js/2.5bacebe9.chunk.js.map",
+    "index.html": "/Todo-Bootstrap/index.html",
+    "precache-manifest.b252448182226dbeaae64c4ec145e6ad.js": "/Todo-Bootstrap/precache-manifest.b252448182226dbeaae64c4ec145e6ad.js",
+    "service-worker.js": "/Todo-Bootstrap/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/Todo-Bootstrap/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.5171e780.chunk.css.map": "/Todo-Bootstrap/static/css/main.5171e780.chunk.css.map",
+    "static/js/2.5bacebe9.chunk.js.LICENSE.txt": "/Todo-Bootstrap/static/js/2.5bacebe9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.53237ca2.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.5bacebe9.chunk.js",
+    "static/css/main.5171e780.chunk.css",
+    "static/js/main.f4bfcbf1.chunk.js"
+  ]
+}
