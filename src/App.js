@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
+import './App.css'
 
 import Form from "./Form";
 import List from "./List";
@@ -50,7 +51,9 @@ function App() {
 
 
     return (
-        <div className="container w-25">
+
+
+        <div className="container">
 
             <Form onCreate={onCreate}/>
             <List list={list}
@@ -61,6 +64,8 @@ function App() {
 
 
         </div>
+
+
 
 
     );
