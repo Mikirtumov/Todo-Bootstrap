@@ -1,26 +1,69 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+
+import Form from "./Form";
+import List from "./List";
+
+const initialTodos = [
+    {id: 1, title: "Read React Documentation ", done: false},
+    {id: 2, title: "test 2 ", done: true},
+    {id: 3, title: "test 3 ", done: false}
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [list, setList] = useState(initialTodos);
+
+    const onCreate = title => {
+        console.log(title)
+        const newItem = {
+            id: Math.random(),
+            title: title,
+            done: false
+        }
+
+        const updateList = [...list, newItem];
+        setList(updateList)
+    };
+
+    const onTaskDelete = (id) => {
+        const updatedList = list.filter(el => el.id !== id);
+        setList(updatedList);
+    }
+
+    const   onTaskDoneToggle = (id) => {
+        const updatedList = list.map(el => {
+            if(el.id === id) return { ...el, done: !el.done}
+            else return el;
+        })
+        setList(updatedList);
+    };
+    const onTaskSave = (task) => {
+        const updatedTodos = list.map(el => {
+            if (el.id === task.id) return { ...el, title: task.title };
+            else return el;
+        });
+
+        setList(updatedTodos);
+    };
+
+
+
+    return (
+        <div className="container w-25">
+
+            <Form onCreate={onCreate}/>
+            <List list={list}
+                  onTaskDelete={onTaskDelete}
+                  onTaskDoneToggle={onTaskDoneToggle}
+                  onTaskSave={onTaskSave}
+            />
+
+
+        </div>
+
+
+    );
 }
 
 export default App;
