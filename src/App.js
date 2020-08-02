@@ -6,8 +6,8 @@ import List from "./List";
 
 const initialTodos = [
     {id: 1, title: "Read React Documentation ", done: false},
-    {id: 2, title: "test 2 ", done: true},
-    {id: 3, title: "test 3 ", done: false}
+    {id: 2, title: "Sleep More ", done: false},
+    {id: 3, title: "Find Job ", done: false}
 ]
 
 function App() {

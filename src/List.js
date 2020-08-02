@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GiCrossMark } from "react-icons/gi";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import { BsPencil } from "react-icons/bs";
 
 
 function List(props) {
@@ -30,22 +31,24 @@ function List(props) {
                     {
                         taskEdit.id === el.id
                             ? <>
-                                <input type="text" value={taskEdit.title} onChange={onEditTaskChange} />
+                                <input  type="text" value={taskEdit.title} onChange={onEditTaskChange} />
                                 <button className="btn btn-outline-secondary btn-sm ml-2"
                                         type="button"
                                         onClick={taskSave}
+
                                         disabled={!taskEdit.title.trim()}>Save</button>
                             </>
                             : <span
                                 onClick={() => editMode(el)}>
                             {el.done ?  <del>{el.title}</del> : <span>{el.title}</span>}
+                                <BsPencil/>
                             </span>
                     }
 
                 <button className="btn btn-outline-secondary float-right btn-sm ml-2"
                         type="button"
                         onClick={() => props.onTaskDelete(el.id)}>
-                    <GiCrossMark color="black"/>
+                    <GiCrossMark/>
                 </button>
                 <button className="btn btn-outline-secondary float-right btn-sm"
                         type="button"
