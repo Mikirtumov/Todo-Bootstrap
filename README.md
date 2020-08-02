@@ -4,7 +4,7 @@
 
 **Created on**: `Aug 2nd 2020`
 
-![](demo-todo-bootstrap.gif)
+![](demo.gif)
 
 
 ## TECHNOLOGIES USED
