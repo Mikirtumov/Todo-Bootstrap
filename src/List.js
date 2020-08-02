@@ -41,7 +41,7 @@ function List(props) {
                             : <span
                                 onClick={() => editMode(el)}>
                             {el.done ?  <del>{el.title}</del> : <span>{el.title}</span>}
-                                <BsPencil/>
+                                <BsPencil cursor='pointer' />
                             </span>
                     }
 
