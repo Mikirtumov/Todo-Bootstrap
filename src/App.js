@@ -7,8 +7,8 @@ import List from "./List";
 
 const initialTodos = [
     {id: 1, title: "Read React Documentation ", done: false},
-    {id: 2, title: "Sleep More ", done: false},
-    {id: 3, title: "Find Job ", done: false}
+    {id: 2, title: "Learn Beautiful Drag And Drop", done: false},
+    {id: 3, title: "Read Bootstrap Documentation ", done: false}
 ]
 
 function App() {
@@ -47,8 +47,6 @@ function App() {
 
         setList(updatedTodos);
     };
-
-
 
     return (
 
